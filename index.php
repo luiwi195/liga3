@@ -4,7 +4,10 @@
  
  // Personalizo una conexión a la base de datos (servidor, usuario, contraseña, schema)
  BD('localhost', 'root', '', 'base');
- 
+
+ RUTA::nueva('luis',function(){
+		echo'<h1>Esta es mi modificacion al codigo de liga3_master <h1>';
+	});
  // Configuramos la entidad a usar
  $tabla = 'usuarios';
  $liga  = LIGA($tabla);
@@ -30,7 +33,7 @@
   exit(0);
  }
   // Imprimo las etiquetas HTML iniciales
-  HTML::cabeceras(array('title'      =>'Pruebas LIGA 3',
+  HTML::cabeceras(array('title'      =>'Pruebas LIGA 3 Luis Alberto Hernandez Alvarez',
 			'description'=>'Página de pruebas para LIGA 3',
 			'css'        =>'util/LIGA.css',
 			'style'      =>'label { width:100px; }'
